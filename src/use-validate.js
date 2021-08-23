@@ -1,5 +1,5 @@
 
-import useVuelidate from "@vuelidate/core";
+import { useVuelidate } from "@vuelidate/core";
 import { mapObjIndexed, path } from "ramda";
 
 const useVuelidateExtendsMessage = (rules, form, messages = {}) => {
