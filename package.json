@@ -1,13 +1,14 @@
 {
-  "name": "vue3-validate",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@arshown/vue3-validate",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue3-validate src/main.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vuelidate/core": "2.0.0-alpha.24",
+    "@vuelidate/validators": "2.0.0-alpha.21",
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
@@ -20,6 +21,11 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0"
   },
+  "sideEffects": false,
+  "files": [
+    "dist/vue3-validate.umd.min.js",
+    "src"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -38,5 +44,15 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArShown/vue3-validate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArShown/vue3-validate/issues"
+  },
+  "homepage": "https://github.com/ArShown/vue3-validate#readme"
 }

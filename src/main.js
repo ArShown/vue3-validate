@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { VuelidatePlugin } from "@vuelidate/core";
+import useValidate from './use-validate';
+export * from "@vuelidate/validators";
 
-createApp(App).mount('#app')
+export {
+ VuelidatePlugin,
+ useValidate
+}
