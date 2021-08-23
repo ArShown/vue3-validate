@@ -1,6 +1,7 @@
 {
   "name": "@arshown/vue3-validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "main": "dist/vue3-validate.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue3-validate src/main.js",
