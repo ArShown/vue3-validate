@@ -13,7 +13,10 @@ const useVuelidateExtendsMessage = (rules, form, messages = {}) => {
     rules
   );
 
-  return useVuelidate(newRules, form);
+  return useVuelidate(newRules, form, {
+    $lazy: true,
+    $autoDirty: false,
+  });
 };
 
 export default useVuelidateExtendsMessage;
