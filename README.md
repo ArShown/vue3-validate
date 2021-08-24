@@ -32,7 +32,9 @@ app.mount("#app");
 ```javascript
 <script>
 import { reactive } from "vue";
-import { useValidate, required, minLength } from "@arshown/vue3-validate";
+import { useValidate, validators } from "@arshown/vue3-validate";
+
+const { required, minLength } = validators;
 
 export default {
   setup() {
