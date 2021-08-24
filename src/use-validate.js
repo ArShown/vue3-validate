@@ -1,8 +1,7 @@
-
 import { useVuelidate } from "@vuelidate/core";
 import { mapObjIndexed, path } from "ramda";
 
-const useVuelidateExtendsMessage = (rules, form, messages = {}) => {
+function useVuelidateExtendsMessage(rules, form, messages = {}) {
   const newRules = mapObjIndexed(
     (validators, field) =>
       mapObjIndexed((validator, type) => {
@@ -13,7 +12,10 @@ const useVuelidateExtendsMessage = (rules, form, messages = {}) => {
     rules
   );
 
-  return useVuelidate(newRules, form);
-};
+  return useVuelidate(newRules, form, { 
+    $lazy: true, 
+    $autoDirty: false,
+  });
+}
 
 export default useVuelidateExtendsMessage;

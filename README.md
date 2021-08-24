@@ -4,6 +4,7 @@
 
 [![](https://img.shields.io/npm/v/@arshown/vue3-validate)](https://www.npmjs.com/package/@arshown/vue3-validate)
 
+> !! 還不能用，有空再努力
 
 ## Install
 
@@ -11,18 +12,6 @@
 > npm install @arshown/vue3-validate
 # or
 > yarn add @arshown/vue3-validate
-```
-
-## Started
-
-```javascript
-// main.js
-import { VuelidatePlugin } from "@arshown/vue3-validate";
-import App from "./App";
-
-const app = createApp(App);
-app.use(VuelidatePlugin);
-app.mount("#app");
 ```
 
 ## Usage
