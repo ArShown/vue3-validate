@@ -7,19 +7,20 @@
 ## Install
 
 ```shell
-> npm install @vuelidate/core @vuelidate/validators @arshown/vue3-validate
+> npm install @vuelidate/core @arshown/vue3-validate
 # or
-> yarn add @vuelidate/core @vuelidate/validators @arshown/vue3-validate
+> yarn add @vuelidate/core @arshown/vue3-validate
 ```
 
 ## Usage
 
-複寫原 [@vuelidate/core](https://www.npmjs.com/package/@vuelidate/core) 的 useValidate 使用方式，添加驗證訊息
+複寫原 [@vuelidate/core](https://www.npmjs.com/package/@vuelidate/core) 的 useVuelidate 使用方式，添加驗證訊息
 
 ```javascript
 <script>
 import { reactive } from "vue";
-import { useValidate, required, minLength } from "@arshown/vue3-validate";
+import { useValidate } from "@arshown/vue3-validate";
+import { required, minLength } from "@vuelidate/validators";
 
 export default {
   setup() {

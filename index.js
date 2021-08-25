@@ -18,4 +18,7 @@ function useVuelidateExtendsMessage(rules, form, messages = {}) {
   });
 }
 
-export default useVuelidateExtendsMessage;
+export {
+  useVuelidateExtendsMessage as useValidate,
+  useVuelidateExtendsMessage as default,
+};

@@ -1,6 +1,6 @@
 {
   "name": "@arshown/vue3-validate",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
