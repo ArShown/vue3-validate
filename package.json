@@ -1,47 +1,28 @@
 {
   "name": "@arshown/vue3-validate",
-  "version": "1.4.0",
-  "main": "dist/vue3-validate.umd.min.js",
+  "version": "1.5.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue3-validate src/main.js",
-    "lint": "vue-cli-service lint"
+    "build": "bili"
   },
   "dependencies": {
-    "@vuelidate/core": "2.0.0-alpha.24",
-    "@vuelidate/validators": "2.0.0-alpha.21",
-    "core-js": "^3.6.5",
-    "ramda": "0.27.1",
-    "vue": "^3.0.0"
+    "core-js": "3.16.1",
+    "ramda": "0.27.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "@vuelidate/core": "2.0.0-alpha.24",
+    "@vuelidate/validators": "2.0.0-alpha.21",
+    "@babel/core": "7.15.0",
+    "@babel/plugin-transform-runtime": "7.15.0",
+    "@babel/preset-env": "7.15.0",
+    "babel-eslint": "10.1.0",
+    "bili": "5.0.5"
   },
   "sideEffects": false,
   "files": [
-    "dist/vue3-validate.umd.min.js",
-    "src"
+    "dist"
   ],
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",

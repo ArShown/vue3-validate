@@ -4,14 +4,12 @@
 
 [![](https://img.shields.io/npm/v/@arshown/vue3-validate)](https://www.npmjs.com/package/@arshown/vue3-validate)
 
-> !! 還不能用，有空再努力
-
 ## Install
 
 ```shell
-> npm install @arshown/vue3-validate
+> npm install @vuelidate/core @vuelidate/validators @arshown/vue3-validate
 # or
-> yarn add @arshown/vue3-validate
+> yarn add @vuelidate/core @vuelidate/validators @arshown/vue3-validate
 ```
 
 ## Usage
@@ -21,9 +19,7 @@
 ```javascript
 <script>
 import { reactive } from "vue";
-import { useValidate, validators } from "@arshown/vue3-validate";
-
-const { required, minLength } = validators;
+import { useValidate, required, minLength } from "@arshown/vue3-validate";
 
 export default {
   setup() {
