@@ -1,6 +1,6 @@
 /** @type {import('bili').Config} */
 module.exports = {
- input: 'src/main.js',
+ input: 'src/index.js',
  output: {
    format: ['es', 'cjs'],
    moduleName: 'useValidate'
